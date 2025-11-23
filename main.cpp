@@ -5,6 +5,7 @@
 int main()
 {
     Messanger Messanger;
-    Messanger();
+    // When all is setuping
+
     return 0;
 }

@@ -20,7 +20,7 @@ public:
 private:
     void setup();
     User* User;
-    Message* Message;
+    MessageHistory* MessageHistory;
 };
 
 

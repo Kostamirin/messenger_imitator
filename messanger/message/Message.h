@@ -7,6 +7,7 @@
 
 #include <string>
 #include <vector>
+#include "../user/User.h"
 
 using namespace std;
 class Message;
@@ -16,12 +17,13 @@ class EachUserHistory;
 class MessageHistory
 {
 public:
-    vector<EachUserHistory*> history;
+    vector<EachUserHistory*> main_history;
 };
 
 class EachUserHistory
 {
 public:
+    User what_user;
     vector<Message> messages;
 
 };
@@ -32,7 +34,7 @@ public:
     Message();
 
     string message;
-    string *id; // Needed to send each message
+    string id; // Needed to send each message
 
 
 };
