@@ -11,15 +11,18 @@
 
 
 
-class Messanger
+class Messenger
 {
 public:
-    Messanger();
-    ~Messanger();
+    Messenger();
+    ~Messenger();
+    void tught_notes();
 
 private:
     void setup();
-    User* User;
+    void save_messenger();
+    User* Admin;
+    vector<User*> Contacts;
     MessageHistory* MessageHistory;
 };
 

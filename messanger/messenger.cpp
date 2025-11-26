@@ -1,26 +1,26 @@
 // Created by kleymuner on 22.11.2025.
 
 
-#include "Messanger.h"
+#include "Messenger.h"
 
 
-Messanger::Messanger()
+Messenger::Messenger()
 {
     this->setup();
 }
 
-Messanger::~Messanger()
+Messenger::~Messenger()
 {
 
 }
 
 
-void Messanger::setup()
+void Messenger::setup()
 {
     cout <<"Enter your name: ";
-    cin >>User->name;
+    cin >>Admin->name;
     cout <<endl;
     std::cout <<"Enter your bio (Optional): ";
-    cin >>User->bio;
+    cin >>Admin->bio;
 }
 

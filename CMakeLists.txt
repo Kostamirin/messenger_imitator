@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(messenger_imitator main.cpp
         messanger/messenger.cpp
-        messanger/Messanger.h
+        messanger/Messenger.h
         messanger/user/user.cpp
         messanger/user/User.h
         messanger/message/Message.h

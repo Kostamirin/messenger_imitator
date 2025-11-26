@@ -19,6 +19,7 @@ public:
 
 
     string name;
+    string local_name;
     string bio;
     string id;
 

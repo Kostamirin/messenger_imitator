@@ -1,10 +1,10 @@
 #include <iostream>
-#include "messanger/Messanger.h"
+#include "messanger/Messenger.h"
 
 
 int main()
 {
-    Messanger Messanger;
+    Messenger Messenger;
     // When all is setuping
 
     return 0;
