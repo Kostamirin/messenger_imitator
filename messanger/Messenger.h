@@ -1,6 +1,4 @@
-//
 // Created by kleymuner on 22.11.2025.
-//
 
 #ifndef MESSENGER_IMITATOR_MESSENGER_H
 #define MESSENGER_IMITATOR_MESSENGER_H
@@ -22,7 +20,6 @@ private:
     void setup();
     void save_messenger();
     User* Admin;
-    vector<User*> Contacts;
     MessageHistory* MessageHistory;
 };
 

@@ -1,6 +1,4 @@
-//
 // Created by kleymuner on 22.11.2025.
-//
 
 #ifndef MESSENGER_IMITATOR_MESSAGE_H
 #define MESSENGER_IMITATOR_MESSAGE_H
@@ -31,7 +29,7 @@ public:
 class Message
 {
 public:
-    void send();
+    void send(User* who);
 
     string message;
     string id; // Needed to send each message
