@@ -3,3 +3,8 @@
 //
 
 #include "Message.h"
+
+void Message::send()
+{
+
+}

@@ -31,7 +31,7 @@ public:
 class Message
 {
 public:
-    Message();
+    void send();
 
     string message;
     string id; // Needed to send each message
