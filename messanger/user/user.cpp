@@ -26,3 +26,6 @@ void User::id_generation()
     this->id = identify;
 }
 
+void User::receive_message (string messsage, string id) {
+    this->full_history.main_history.
+};

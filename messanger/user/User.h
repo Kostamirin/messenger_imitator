@@ -24,9 +24,12 @@ public:
     string id;
 
     map<User*, EachUserHistory*> contacts;
-    MessageHistory chat_history;
+    MessageHistory full_history;
+
+    void receive_messaage(string messsage, string id);
 
 private:
+
     void id_generation();
 };
 

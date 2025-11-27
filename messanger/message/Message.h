@@ -7,16 +7,11 @@
 #include <vector>
 #include "../user/User.h"
 
+class User;
 using namespace std;
 class Message;
 class EachUserHistory;
 
-
-class MessageHistory
-{
-public:
-    vector<EachUserHistory*> main_history;
-};
 
 class EachUserHistory
 {
