@@ -24,7 +24,7 @@ public:
     string id;
 
     map<User*, EachUserHistory*> contacts;
-    MessageHistory full_history;
+    vector<EachUserHistory> chat_history;
 
     void receive_messaage(string messsage, string id);
 

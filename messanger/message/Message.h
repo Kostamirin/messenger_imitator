@@ -16,7 +16,7 @@ class EachUserHistory;
 class EachUserHistory
 {
 public:
-    User what_user;
+    User* who;
     vector<Message> messages;
 
 };

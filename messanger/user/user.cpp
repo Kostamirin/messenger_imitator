@@ -27,5 +27,5 @@ void User::id_generation()
 }
 
 void User::receive_message (string messsage, string id) {
-    this->full_history.main_history.
+    this->chat_history.
 };
