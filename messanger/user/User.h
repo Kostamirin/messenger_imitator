@@ -25,7 +25,7 @@ public:
 class User
 {
 private:
-    string id_generation();
+    static string id_generation();
 
 public:
     User();
@@ -34,12 +34,13 @@ public:
     string name;
     string local_name;
     string bio;
-    string id = this->id_generator();
+    string id = this->id_generation();
 
     vector<Contact*> contacts;
     vector<EachUserHistory> chat_history;
 
-    void receive_messaage(string messsage, string id);
+    void receive_messaage(Server* server);
+
 
 };
 

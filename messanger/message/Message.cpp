@@ -2,7 +2,7 @@
 
 #include "Message.h"
 
-void Message::send(User* me)
+void Message::send(Contact* receiver)
 {
     
 }
