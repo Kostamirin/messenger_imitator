@@ -14,7 +14,7 @@ class Messenger
 public:
     Messenger();
     ~Messenger();
-    void tught_notes();
+    void taught_notes();
 
 private:
     void setup();
