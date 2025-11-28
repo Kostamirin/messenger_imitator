@@ -26,8 +26,11 @@ class Message
 public:
     void send(User* who);
 
+    string from; // Both of them are holding user IDs
+    string to;
+
     string message;
-    string id; // Needed to send each message
+
 
 
 };
