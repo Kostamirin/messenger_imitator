@@ -24,11 +24,10 @@ public:
 class Message
 {
 public:
-    void send(User* who);
+    void send(Contact* contact);
 
-    string from; // Both of them are holding user IDs
-    string to;
-
+    string from = User.id; // holds User ID
+    string to = Contact.id;   // holds Contact ID
     string message;
 
 

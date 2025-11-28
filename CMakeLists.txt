@@ -10,4 +10,6 @@ add_executable(messenger_imitator main.cpp
         messanger/user/User.h
         messanger/message/Message.h
         messanger/message/Message.cpp
-        messanger/message/Message.h)
+        messanger/message/Message.h
+        server/Server.cpp
+        server/Server.h)

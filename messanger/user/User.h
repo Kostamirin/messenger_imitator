@@ -8,29 +8,11 @@
 #include <map>
 
 #include "../message/Message.h"
-class User_public;
 
+using namespace std;
 
-class User
-{
-public:
-    User();
-    ~User();
+class Contact;
 
-
-    string name;
-    string local_name;
-    string bio;
-    string id;
-
-    vector<User_public*> contacts;
-    vector<EachUserHistory> chat_history;
-
-    void receive_messaage(string messsage, string id);
-
-private:
-    void id_generation();
-};
 
 class Contact
 {
@@ -40,7 +22,27 @@ public:
     string id;
 };
 
-using namespace std;
+class User
+{
+private:
+    string id_generation();
+
+public:
+    User();
+    ~User();
+
+    string name;
+    string local_name;
+    string bio;
+    string id = this->id_generator();
+
+    vector<Contact*> contacts;
+    vector<EachUserHistory> chat_history;
+
+    void receive_messaage(string messsage, string id);
+
+};
+
 
 
 #endif //MESSENGER_IMITATOR_USER_H

@@ -14,7 +14,7 @@ User::~User()
 
 }
 
-void User::id_generation()
+string User::id_generation()
 {
     string identify = "";
 
@@ -23,7 +23,7 @@ void User::id_generation()
         identify[i] = rand() % 256;
     }
 
-    this->id = identify;
+    return identify;
 }
 
 void User::receive_message (string messsage, string id) {
