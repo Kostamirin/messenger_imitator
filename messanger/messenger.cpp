@@ -6,6 +6,7 @@
 
 Messenger::Messenger()
 {
+    this->welcome_screen();
     this->setup();
 }
 
@@ -14,6 +15,15 @@ Messenger::~Messenger()
 
 }
 
+void Messenger::welcome_screen()
+{
+    cout <<"Welcome to Messenger!" <<endl;
+    cout <<"Choose the option: " <<endl;
+    cout <<"1. Create new account" <<endl;
+    cout <<"2. Import existed database" <<endl;
+    cout <<"Choice: " ;
+    cin >> this->choice;
+}
 
 void Messenger::setup()
 {

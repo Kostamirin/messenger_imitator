@@ -15,8 +15,10 @@ public:
     Messenger();
     ~Messenger();
     void taught_notes();
+    int choice;
 
 private:
+    void welcome_screen();
     void setup();
     void save_messenger();
     User* Admin;
