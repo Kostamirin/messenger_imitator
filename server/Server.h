@@ -5,8 +5,17 @@
 #ifndef MESSENGER_IMITATOR_SERVER_H
 #define MESSENGER_IMITATOR_SERVER_H
 
+#include <vector>
+#include "../messanger/user/User.h"
 
 class Server {
+public:
+    Server();
+    ~Server();
+
+    string get_public_name(string id);
+    vector<User*> getUsers();
+
 };
 
 

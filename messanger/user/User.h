@@ -15,13 +15,16 @@ using namespace std;
 
 class Contact;
 
-
 class Contact
 {
+private:
+
+
 public:
-    string public_name;
+    string public_name = Server.get_public_name(this->id);
     string local_name;
     string id;
+    string notes;
 };
 
 class User
