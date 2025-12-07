@@ -44,9 +44,6 @@ public:
     vector<Contact*> contacts;
     vector<EachUserHistory*> chat_history;
 
-    void receive_messaage(Server* server);
-
-
 };
 
 

@@ -22,7 +22,9 @@ private:
     void setup();
     void save_messenger();
     User* Admin;
-    * MessageHistory;
+    EachUserHistory* MessageHistory;
+
+    void receive_message(Server* Server);
 };
 
 

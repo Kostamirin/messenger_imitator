@@ -26,6 +26,6 @@ string User::id_generation()
     return identify;
 }
 
-void User::receive_message (string messsage, string id) {
-
+void User::receive_message (Server* Server) {
+    return;
 };
