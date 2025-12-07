@@ -15,11 +15,34 @@ Messenger::~Messenger()
 
 }
 
+// DATABASE FUNCTIONS
+void Messenger::create_local_database()
+{
+    int result = sqlite3_open("local_database.db", &this->local_database);
+
+
+
+    sqlite3_close(this->local_database);
+
+}
+
+void Messenger::change_local_database()
+{
+
+}
+
+void Messenger::import_local_database()
+{
+
+}
+
+
 void Messenger::receive_message(Server* Server)
 {
     // There's nothing here
 }
 
+// MESSENGER FUNCTIONS
 void Messenger::welcome_screen()
 {
     cout <<"Welcome to Messenger!" <<endl;

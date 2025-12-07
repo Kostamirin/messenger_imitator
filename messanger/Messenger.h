@@ -6,8 +6,8 @@
 #include "user/User.h"
 #include "message/Message.h"
 
-#include <fstream>
-
+#include <iostream>
+#include <sqlite3.h> // you could need next library - libsqlite3-dev
 
 class Messenger
 {
@@ -28,10 +28,18 @@ private:
     void save_messenger();
     void receive_message(Server* Server);
 
+    void checkSQLiteResult(int result) {
+        if (result != SQLITE_OK) {
+            std::cerr << "Ошибка: " << sqlite3_errmsg(nullptr) << std::endl;
+            sqlite3_close(nullptr);
+            exit(1);
+        }
+    }
+
     User* Admin;
     EachUserHistory* MessageHistory;
 
-    std::ofstream local_database;
+    sqlite3* local_database;
 };
 
 
