@@ -15,7 +15,7 @@ public:
 
     string get_public_name(string id);
     vector<User*> getUsers();
-
+    vector<Message*> getMessages();
 };
 
 
