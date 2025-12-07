@@ -8,7 +8,9 @@
 #include <map>
 
 #include "../message/Message.h"
+#include "../../server/Server.h"
 
+class EachUserHistory;
 using namespace std;
 
 class Contact;
@@ -37,7 +39,7 @@ public:
     string id = this->id_generation();
 
     vector<Contact*> contacts;
-    vector<EachUserHistory> chat_history;
+    vector<EachUserHistory*> chat_history;
 
     void receive_messaage(Server* server);
 
