@@ -15,6 +15,11 @@ Messenger::~Messenger()
 
 }
 
+void Messenger::receive_message(Server* Server)
+{
+    // There's nothing here
+}
+
 void Messenger::welcome_screen()
 {
     cout <<"Welcome to Messenger!" <<endl;
