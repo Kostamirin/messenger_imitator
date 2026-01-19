@@ -27,5 +27,5 @@ string User::id_generation()
 }
 
 void User::receive_message (Server* Server) {
-    return;
+    return ;
 };
