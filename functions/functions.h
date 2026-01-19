@@ -8,6 +8,8 @@
 
 class functions
 {
+    void send_message();
+
 };
 
 
