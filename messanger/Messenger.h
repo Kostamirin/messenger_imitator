@@ -19,7 +19,7 @@ public:
     int choice;
 
     void create_local_database();
-    void import_local_database();
+    void import_local_database(User);
     void change_local_database();
 
 private:
