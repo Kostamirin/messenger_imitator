@@ -8,6 +8,7 @@
 
 class functions
 {
+public:
     void send_message();
 
 };
